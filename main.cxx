@@ -55,9 +55,9 @@ public:
     TicToe() : Fl_Window(WINDOW_WIDTH, WINDOW_HEIGHT) {
         int cellWidth = WINDOW_WIDTH / 3;
         int cellHeight = WINDOW_HEIGHT / 3;
-        for (int i = 0; i < 3; ++i) {
+        for (int x = 0; x < 3; ++x) {
             for (int j = 0; j < 3; ++j) {
-                board[i][j] = new Pool(i * cellWidth, j * cellHeight, cellWidth, cellHeight);
+                board[x][j] = new Pool(x * cellWidth, j * cellHeight, cellWidth, cellHeight);
             }
         }
     }
